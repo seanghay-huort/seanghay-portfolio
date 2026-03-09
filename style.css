@@ -136,6 +136,23 @@ padding:25px;
 border-radius:10px;
 }
 
+.light-mode{
+background:white;
+color:black;
+}
+
+.light-mode nav{
+background:#f4f4f4;
+}
+
+.light-mode .project{
+background:#f1f5f9;
+}
+
+.light-mode .skill{
+background:#f1f5f9;
+}
+
 
 footer{
 text-align:center;
@@ -158,4 +175,15 @@ section{
 padding:60px 20px;
 }
 
+}
+
+section{
+opacity:0;
+transform:translateY(30px);
+transition:all .6s ease;
+}
+
+section.visible{
+opacity:1;
+transform:translateY(0);
 }
