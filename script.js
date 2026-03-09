@@ -93,3 +93,47 @@ move:{speed:2},
 line_linked:{enable:true}
 }
 });
+
+window.addEventListener("load", () => {
+
+const loader = document.getElementById("loader")
+
+setTimeout(()=>{
+loader.style.opacity = "0"
+loader.style.pointerEvents = "none"
+},800)
+
+})
+
+document.addEventListener("mousemove",(e)=>{
+
+const moveX = (e.clientX / window.innerWidth) * 20
+const moveY = (e.clientY / window.innerHeight) * 20
+
+document.querySelectorAll("section").forEach(section=>{
+section.style.transform = `translateX(${moveX/10}px) translateY(${moveY/10}px)`
+})
+
+})
+
+(function(){
+emailjs.init("YOUR_PUBLIC_KEY")
+})()
+
+document
+.getElementById("contact-form")
+.addEventListener("submit", function(e){
+
+e.preventDefault()
+
+emailjs.sendForm(
+"YOUR_SERVICE_ID",
+"YOUR_TEMPLATE_ID",
+this
+).then(()=>{
+
+alert("Message sent!")
+
+})
+
+})

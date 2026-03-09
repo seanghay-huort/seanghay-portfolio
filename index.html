@@ -9,6 +9,10 @@
 
 <body>
 
+<div id="loader">
+<h1>Loading Portfolio...</h1>
+</div>
+
 <nav>
 <h2 class="logo">Seanghay</h2>
 
@@ -57,7 +61,7 @@ and smooth user experiences.
 </section>
 
 
-<section id="skills">
+<!-- <section id="skills">
 
 <h2>Skills</h2>
 
@@ -74,36 +78,7 @@ and smooth user experiences.
 
 </div>
 
-<!-- </section>
-
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div id="github-projects" class="projects"></div>
-
 </section> -->
-<section id="projects">
-
-<h2>My iOS Apps</h2>
-
-<div class="app-showcase">
-
-<div class="phone">
-<img src="app1.png" class="app-image">
-</div>
-
-<div class="phone">
-<img src="app2.png" class="app-image">
-</div>
-
-<div class="phone">
-<img src="app3.png" class="app-image">
-</div>
-
-</div>
-
-</section>
 
 <section id="skills">
 
@@ -129,6 +104,67 @@ and smooth user experiences.
 <div class="skill">
 <p>CoreData</p>
 <div class="bar"><div class="progress coredata"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<!-- <section id="projects">
+
+<h2>Projects</h2>
+
+<div id="github-projects" class="projects"></div>
+
+</section> -->
+
+<!-- <section id="projects">
+
+<h2>My iOS Apps</h2>
+
+<div class="app-showcase">
+
+<div class="phone">
+<img src="app1.png" class="app-image">
+</div>
+
+<div class="phone">
+<img src="app2.png" class="app-image">
+</div>
+
+<div class="phone">
+<img src="app3.png" class="app-image">
+</div>
+
+</div>
+
+</section> -->
+
+<section id="apps">
+
+<h2>My Apps</h2>
+
+<div class="app-grid">
+
+<div class="app-card">
+<img src="app1.png">
+<h3>Running Tracker</h3>
+<p>Track runs with GPS and maps.</p>
+<button>View App</button>
+</div>
+
+<div class="app-card">
+<img src="app2.png">
+<h3>Expense Tracker</h3>
+<p>Manage daily spending easily.</p>
+<button>View App</button>
+</div>
+
+<div class="app-card">
+<img src="app3.png">
+<h3>Weather App</h3>
+<p>Beautiful weather forecasts.</p>
+<button>View App</button>
 </div>
 
 </div>
@@ -197,6 +233,23 @@ with clean architecture.
 
 </section>
 
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contact-form">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
 
 <section id="contact">
 
@@ -230,5 +283,6 @@ Hosted on GitHub Pages
 <div id="particles-js"></div>
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </body>
 </html>
