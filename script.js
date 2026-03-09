@@ -65,3 +65,31 @@ item.classList.add("show");
 });
 
 });
+
+const skills = document.querySelectorAll(".progress");
+
+window.addEventListener("scroll", () => {
+
+skills.forEach(skill => {
+
+const top = skill.getBoundingClientRect().top;
+
+if(top < window.innerHeight){
+skill.style.width = skill.classList.contains("swift") ? "95%" :
+skill.classList.contains("swiftui") ? "85%" :
+skill.classList.contains("uikit") ? "90%" : "80%";
+
+}
+
+});
+
+});
+
+particlesJS("particles-js",{
+particles:{
+number:{value:80},
+size:{value:3},
+move:{speed:2},
+line_linked:{enable:true}
+}
+});
